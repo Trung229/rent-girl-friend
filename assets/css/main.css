@@ -1,0 +1,326 @@
+/*header*/
+
+.header {
+    height: 46px;
+    background-color: var(--black-color);
+    font-size: 1.5rem;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.header__navbar-list {
+    display: inline-block;
+}
+
+.header__navbar-item {
+    display: inline-block;
+    position: relative;
+}
+
+.header__subnav-item:hover>a,
+.header__navbar-item:hover>a {
+    background-color: var(--grey-color);
+    color: var(--black-color);
+}
+
+.header__navbar-item:hover .header__subnav-list {
+    display: block;
+}
+
+.header__navbar-item>a {
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 0px 24px;
+    line-height: 46px;
+}
+
+.header__subnav-list {
+    position: absolute;
+    list-style: none;
+    background-color: var(--white-color);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.header__subnav-item a {
+    display: block;
+    text-decoration: none;
+    color: var(--black-color);
+    padding: 8px 17px;
+    min-width: 160px;
+}
+
+.header__menu,
+.header__search {
+    display: inline-block;
+    float: right;
+    line-height: 46px;
+    padding: 0px 24px;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.header__menu {
+    display: none;
+}
+
+.header__search:hover {
+    background-color: var(--red-color);
+}
+
+.header__search-icon {
+    color: var(--white-color);
+}
+
+
+/*end header*/
+
+.slider {
+    background-image: url(https://i.pinimg.com/564x/06/9b/7f/069b7fd46486952ea38522f7411fb4f6.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50%;
+    position: relative;
+    margin-top: 46px;
+}
+
+.slider__content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 47px 0px;
+}
+
+.slider__content-heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--white-color);
+    text-shadow: 0px 0.01rem 0.01rem rgba(0, 0, 0, 1);
+    margin-bottom: 15px;
+}
+
+.slider__content-description {
+    font-size: var(--font-size);
+    color: var(--white-color);
+    margin-top: 15px;
+    text-shadow: 0px 0.2rem 1rem rgba(0, 0, 0, 1);
+}
+
+
+/*slider*/
+
+
+/*content*/
+
+.content {}
+
+.content__about {}
+
+.content__about-heading {}
+
+.content__about-slogan {}
+
+.content__about-descrp {
+    text-align: justify;
+    font-size: var(--font-size);
+}
+
+.content__member-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 32px;
+    flex-wrap: wrap;
+}
+
+.content__member-item {}
+
+.content__member-name {
+    font-size: var(--font-size);
+    margin: 15px 0px;
+}
+
+.content__member-img {
+    width: 158px;
+}
+
+
+/*tour date*/
+
+.tour-container {
+    background-color: var(--black-color);
+}
+
+.content__heading--white {
+    color: var(--white-color);
+}
+
+.content__slogan-white {
+    color: var(--white-color);
+}
+
+.content__ticket-board {
+    background-color: var(--white-color);
+    text-align: left;
+    font-size: var(--font-size);
+}
+
+.content__ticket-list {
+    list-style: none;
+    color: #777;
+}
+
+.content__ticket-item {
+    border-bottom: 1px solid var(--grey-color);
+    padding: 8px 16px;
+}
+
+.content__ticket-item span {
+    background-color: var(--red-color);
+    color: var(--white-color);
+    margin-left: 16px;
+}
+
+.content__ticket-item .content__ticket-remaining {
+    float: right;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    background-color: var(--black-color);
+    -o-border-radius: 50%;
+}
+
+.content__ticket-buy-list {
+    display: flex;
+    padding: 32px 0px;
+    margin: 0px -8px;
+    justify-content: center;
+}
+
+.content__ticket-buy-item {
+    padding: 0px 8px;
+}
+
+.content__ticket-detail-img {
+    width: 100%;
+    display: block;
+}
+
+.content__ticket-detail {
+    background-color: var(--white-color);
+    text-align: left;
+    padding: 0px 16px;
+}
+
+.content__ticket-detail-heading {
+    padding: 15px 0px;
+    font-size: var(--font-size);
+    font-weight: 400;
+}
+
+.content__ticket-detail-date {
+    padding: 15px 0px;
+    font-size: var(--font-size);
+    opacity: 0.6;
+}
+
+.content__ticket-detail-descrp {
+    padding: 15px 0px;
+    font-size: var(--font-size);
+}
+
+.content__contact-container {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.content__contact-form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__contact-form-input-1 {
+    display: flex;
+}
+
+.content__contact-form-input-2 {
+    display: flex;
+    flex: 1;
+    justify-self: flex-end;
+}
+
+.content__contact-form-input {
+    width: 100%;
+    padding: 11px;
+    margin: 0px 8px;
+}
+
+.content__contact-form-info i[class^="fas"] {
+    font-size: 1.8rem;
+    width: 3rem;
+    line-height: 1.5;
+}
+
+.content__contact-form-control>input {
+    width: fit-content;
+}
+
+.content__contact-btn {}
+
+
+/*map*/
+
+.map__img {
+    display: block;
+    width: 100%;
+    filter: greyscale(50%);
+    -webkit-filter: greyscale(50%);
+}
+
+
+/*footer*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 16px;
+}
+
+.social-list {
+    margin: auto;
+}
+
+.social-list a {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: var(--black-color);
+    opacity: 0.6;
+    margin: 0px 2px;
+}
+
+.social-list a:hover {
+    opacity: 0.4;
+}
+
+.copyright {
+    margin: var(--font-size) auto var(--font-size) auto;
+    opacity: 0.6;
+    font-size: var(--font-size);
+}
+
+.copyright a {
+    color: black;
+}
